@@ -248,7 +248,7 @@ Reanalysis datasets combine observational data with numerical weather prediction
 - **Content**: Climate model simulations from 100+ models, historical and future scenarios (SSP1-2.6 to SSP5-8.5)
 - **Usage**: Climate projections, impact assessments, model evaluation, scenario analysis
 - **How to Use**:
-  - Access via ESGF nodes: https://esgf-node.llnl.gov/
+  - Access via ESGF nodes: https://aims2.llnl.gov/
   - Python: `intake-esm`, `xarray`, `pangeo`
   - Cloud: AWS, Google Cloud
 
@@ -666,11 +666,11 @@ Reanalysis datasets combine observational data with numerical weather prediction
 - **Content**: Global tropical cyclone tracks from 1842 to present
 - **Usage**: Tropical cyclone research, climate variability, risk assessment
 - **How to Use**:
-  - Access via NOAA NCEI: https://www.ncdc.noaa.gov/ibtracs/
+  - Access via NOAA NCEI: https://www.ncei.noaa.gov/products/international-best-track-archive/
   - NetCDF, CSV, shapefile formats
   - Python: `xarray`, `geopandas`
 
-### SPEI Global Drought Monitor
+### SPEIbase (SPEI Global Database)
 
 - **Source**: Spanish National Research Council (CSIC)
 - **Citation**: Vicente-Serrano, S.M., et al. (2010). A multiscalar drought index sensitive to global warming. Journal of Climate, 23(7), 1696-1718.
@@ -687,7 +687,7 @@ Reanalysis datasets combine observational data with numerical weather prediction
 - **Content**: Severe weather events in the US from 1950 to present
 - **Usage**: Severe weather climatology, damage assessment, forecasting research
 - **How to Use**:
-  - Access via NOAA NCEI: https://www.ncdc.noaa.gov/stormevents/
+  - Access via NOAA NCEI: https://www.ncei.noaa.gov/stormevents/
   - CSV bulk download or web query
 
 ---
@@ -881,7 +881,8 @@ Regional and national datasets provide country-specific or regional atmospheric 
 - **Content**: Meteorological observations, climate normals, and forecasts for France
 - **Usage**: Weather analysis, climate research, renewable energy
 - **How to Use**:
-  - Access via https://donneespubliques.meteofrance.fr/
+  - Access via https://donneespubliques.meteofrance.fr/ (⚠️ **Note**: This portal is being shut down soon)
+  - New portals: API portal and meteo.data.gouv.fr
   - API available
   - CSV and JSON formats
 
@@ -961,9 +962,8 @@ Regional and national datasets provide country-specific or regional atmospheric 
 - **Content**: Comprehensive atmospheric, hydrological, and land surface data for West Africa, 2001-2010
 - **Usage**: West African monsoon research, climate modeling, land-atmosphere interaction
 - **How to Use**:
-  - Access via https://amma-international.org/
-  - AMMA database: https://baobab.sedoo.fr/AMMA/
-  - Registration required
+  - Contact AMMA project directly for data access
+  - Data may be available through individual research institutions
   - Multiple formats
 
 ### Americas
@@ -1060,7 +1060,7 @@ Regional and national datasets provide country-specific or regional atmospheric 
 - **Usage**: Climate research, agriculture, water resources, renewable energy
 - **How to Use**:
   - Access via https://www.niwa.co.nz/
-  - CliFlo database: https://cliflo.niwa.co.nz/
+  - DataHub (replaces CliFlo): https://data.niwa.co.nz/pages/clidb-on-datahub
   - Registration required (free for research)
   - Multiple formats
 
