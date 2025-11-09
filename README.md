@@ -18,6 +18,12 @@
 - [Radiation Data](#radiation-data)
 - [Extreme Weather Data](#extreme-weather-data)
 - [Paleoclimate Data](#paleoclimate-data)
+- [Regional and National Datasets](#regional-and-national-datasets)
+  - [Asia](#asia)
+  - [Europe](#europe)
+  - [Africa](#africa)
+  - [Americas](#americas)
+  - [Australia and Oceania](#australia-and-oceania)
 
 ---
 
@@ -719,6 +725,367 @@ Reanalysis datasets combine observational data with numerical weather prediction
   - Access via http://lipd.net/
   - Python: `pylipd`
   - JSON-LD format
+
+---
+
+## Regional and National Datasets
+
+Regional and national datasets provide country-specific or regional atmospheric and climate data, often with higher resolution and more frequent updates than global datasets.
+
+### Asia
+
+#### CNEMC (China National Environmental Monitoring Centre)
+
+- **Source**: Ministry of Ecology and Environment of China
+- **Citation**: China National Environmental Monitoring Centre. Air Quality Real-time Publishing Platform.
+- **Content**: Real-time and historical air quality data (PM2.5, PM10, SO₂, NO₂, O₃, CO) from 1,600+ monitoring stations across China
+- **Usage**: Air quality monitoring, pollution research, health impact studies, policy evaluation
+- **How to Use**:
+  - Access via http://www.cnemc.cn/ (Chinese interface)
+  - Real-time data portal: http://106.37.208.233:20035/
+  - Historical data available through requests
+  - Third-party APIs: `china-air-quality` Python package
+
+#### CMA (China Meteorological Administration)
+
+- **Source**: China Meteorological Administration
+- **Citation**: National Meteorological Information Center, China Meteorological Administration
+- **Content**: Surface observations, upper-air data, radar, satellite data covering China from 1951-present, 2,400+ stations
+- **Usage**: Weather forecasting, climate research, agriculture, disaster monitoring
+- **How to Use**:
+  - Access via CMA Data Service: http://data.cma.cn/
+  - Registration required
+  - Both free and commercial data available
+  - Formats: TXT, CSV, NetCDF
+
+#### TPE (Third Pole Environment Database)
+
+- **Source**: Institute of Tibetan Plateau Research, Chinese Academy of Sciences
+- **Citation**: National Tibetan Plateau Data Center
+- **Content**: Meteorological, hydrological, cryosphere, and ecological data for the Tibetan Plateau and surrounding regions
+- **Usage**: High-altitude climate research, glacier studies, monsoon research, water resources
+- **How to Use**:
+  - Access via https://data.tpdc.ac.cn/en/
+  - Registration required (free)
+  - Multiple datasets with DOIs
+  - English interface available
+
+#### IMD (India Meteorological Department)
+
+- **Source**: Ministry of Earth Sciences, Government of India
+- **Citation**: India Meteorological Department, Climate Data
+- **Content**: Daily and monthly temperature, rainfall, humidity, wind data from 550+ stations, 1875-present
+- **Usage**: Monsoon research, agriculture, water resources, climate variability studies
+- **How to Use**:
+  - Access via IMD website: https://www.imdpune.gov.in/
+  - Gridded data products available
+  - Data request forms for historical data
+  - Format: Text files, Excel
+
+#### IITM (Indian Institute of Tropical Meteorology) Datasets
+
+- **Source**: Indian Institute of Tropical Meteorology
+- **Citation**: IITM, Ministry of Earth Sciences, India
+- **Content**: High-resolution gridded rainfall (0.25°), temperature data for India from 1901-present
+- **Usage**: Climate research, monsoon analysis, trend detection, impact studies
+- **How to Use**:
+  - Access via https://www.tropmet.res.in/
+  - Gridded datasets available on request
+  - NetCDF format
+
+#### APHRODITE (Asian Precipitation - Highly-Resolved Observational Data Integration Towards Evaluation)
+
+- **Source**: Research Institute for Humanity and Nature (RIHN), Japan / Meteorological Research Institute of JMA
+- **Citation**: Yatagai, A., et al. (2012). APHRODITE: Constructing a long-term daily gridded precipitation dataset for Asia. Bulletin of the American Meteorological Society, 93(9), 1401-1415.
+- **Content**: Daily gridded precipitation for Asia at 0.25° and 0.5° resolution, 1951-2015
+- **Usage**: Asian monsoon research, hydrological modeling, climate variability
+- **How to Use**:
+  - Access via http://aphrodite.st.hirosaki-u.ac.jp/
+  - Registration required (free)
+  - NetCDF format
+
+#### JMA MSM & GSM (Japan Meteorological Agency Mesoscale & Global Spectral Models)
+
+- **Source**: Japan Meteorological Agency
+- **Citation**: Japan Meteorological Agency, Numerical Weather Prediction
+- **Content**: High-resolution forecasts and analyses for East Asia and globally
+- **Usage**: Weather forecasting, typhoon research, regional climate modeling
+- **How to Use**:
+  - Access via JMA website: https://www.jma.go.jp/jma/indexe.html
+  - Some data freely available
+  - GRIB2 format
+
+#### KMA (Korea Meteorological Administration) Data
+
+- **Source**: Korea Meteorological Administration
+- **Citation**: Korean Meteorological Administration, Automated Synoptic Observing System
+- **Content**: Surface observations, upper-air, radar, and satellite data for Korean Peninsula
+- **Usage**: Weather analysis, air quality, climate research
+- **How to Use**:
+  - Access via KMA Open MET Data Portal: https://data.kma.go.kr/
+  - API available
+  - Registration required
+
+#### Singapore NEA Weather Data
+
+- **Source**: National Environment Agency, Singapore
+- **Citation**: Meteorological Service Singapore
+- **Content**: Real-time and historical weather data for Singapore and surrounding region
+- **Usage**: Tropical weather research, urban climate studies, air quality
+- **How to Use**:
+  - Access via https://www.weather.gov.sg/
+  - API available at https://data.gov.sg/
+  - JSON format
+
+### Europe
+
+#### E-OBS (European Observational Dataset)
+
+- **Source**: European Climate Assessment & Dataset (ECA&D)
+- **Citation**: Cornes, R.C., et al. (2018). An ensemble version of the E-OBS temperature and precipitation data sets. Journal of Geophysical Research: Atmospheres, 123(17), 9391-9409.
+- **Content**: Daily gridded temperature, precipitation, pressure, humidity for Europe at 0.1° and 0.25° resolution, 1950-present
+- **Usage**: European climate analysis, model validation, extreme weather studies
+- **How to Use**:
+  - Access via https://www.ecad.eu/
+  - NetCDF format
+  - Free download
+  - Ensemble versions available
+
+#### DWD CDC (Deutscher Wetterdienst Climate Data Center)
+
+- **Source**: Deutscher Wetterdienst (German Weather Service)
+- **Citation**: DWD Climate Data Center
+- **Content**: Comprehensive meteorological observations for Germany from 1781-present, hourly to annual resolution
+- **Usage**: Climate research, weather analysis, renewable energy, agriculture
+- **How to Use**:
+  - Access via https://opendata.dwd.de/
+  - FTP server with free, open data
+  - Multiple formats: CSV, NetCDF
+  - Python: `wetterdienst` library
+
+#### UKCP (UK Climate Projections)
+
+- **Source**: Met Office Hadley Centre, UK
+- **Citation**: Lowe, J.A., et al. (2018). UKCP18 Science Overview Report. Met Office.
+- **Content**: High-resolution climate projections for UK at 2.2 km resolution, probabilistic projections
+- **Usage**: Climate impact assessments, adaptation planning, UK-specific climate research
+- **How to Use**:
+  - Access via https://www.metoffice.gov.uk/research/approach/collaboration/ukcp
+  - User interface and data download portal
+  - NetCDF format
+
+#### Météo-France Data
+
+- **Source**: Météo-France
+- **Citation**: Météo-France, Public Data
+- **Content**: Meteorological observations, climate normals, and forecasts for France
+- **Usage**: Weather analysis, climate research, renewable energy
+- **How to Use**:
+  - Access via https://donneespubliques.meteofrance.fr/
+  - API available
+  - CSV and JSON formats
+
+#### KNMI (Royal Netherlands Meteorological Institute) Data
+
+- **Source**: Koninklijk Nederlands Meteorologisch Instituut
+- **Citation**: KNMI Climate Data Services
+- **Content**: Historical weather data for the Netherlands from 1901-present, daily observations
+- **Usage**: Climate research, hydrological modeling, agriculture
+- **How to Use**:
+  - Access via https://www.knmi.nl/home
+  - Climate Explorer tool: https://climexp.knmi.nl/
+  - Text format, API available
+
+#### EEA (European Environment Agency) Air Quality Data
+
+- **Source**: European Environment Agency
+- **Citation**: EEA Air Quality Database
+- **Content**: Air quality measurements from 4,000+ stations across Europe, 2013-present
+- **Usage**: Air quality research, policy evaluation, health studies
+- **How to Use**:
+  - Access via https://www.eea.europa.eu/data-and-maps/data/aqereporting-8
+  - Download portal and API
+  - CSV format
+
+### Africa
+
+#### TAHMO (Trans-African Hydro-Meteorological Observatory)
+
+- **Source**: Trans-African Hydro-Meteorological Observatory
+- **Citation**: van de Giesen, N., et al. (2014). Trans-African Hydro-Meteorological Observatory (TAHMO). WIREs Water, 1(4), 341-348.
+- **Content**: High-quality weather station data (temperature, precipitation, humidity, pressure, solar radiation) from 600+ stations across Africa
+- **Usage**: Weather forecasting, climate research, agriculture, hydrology, filling data gaps in Africa
+- **How to Use**:
+  - Access via https://tahmo.org/
+  - API available for registered users
+  - Real-time and historical data
+  - JSON format
+
+#### SASSCAL WeatherNet
+
+- **Source**: Southern African Science Service Centre for Climate Change and Adaptive Land Management
+- **Citation**: SASSCAL WeatherNet
+- **Content**: Weather observations from 170+ automatic weather stations in Southern Africa (Angola, Botswana, Namibia, South Africa, Zambia)
+- **Usage**: Regional climate research, drought monitoring, agriculture
+- **How to Use**:
+  - Access via http://www.sasscalweathernet.org/
+  - Registration required (free)
+  - CSV download
+
+#### SAWS (South African Weather Service)
+
+- **Source**: South African Weather Service
+- **Citation**: South African Weather Service, Climate Data
+- **Content**: Historical and current weather data for South Africa, 1880-present
+- **Usage**: Climate research, weather forecasting, agriculture, water resources
+- **How to Use**:
+  - Access via https://www.weathersa.co.za/
+  - Data requests through official channels
+  - Commercial and research licenses
+
+#### ICPAC (IGAD Climate Prediction and Applications Centre)
+
+- **Source**: Intergovernmental Authority on Development
+- **Citation**: ICPAC, Greater Horn of Africa Climate Data
+- **Content**: Climate data and forecasts for East Africa (Djibouti, Eritrea, Ethiopia, Kenya, Somalia, South Sudan, Sudan, Uganda)
+- **Usage**: Seasonal forecasting, drought early warning, food security
+- **How to Use**:
+  - Access via https://www.icpac.net/
+  - Climate data portal
+  - GIS and text formats
+
+#### AMMA (African Monsoon Multidisciplinary Analysis)
+
+- **Source**: International research project
+- **Citation**: Redelsperger, J.L., et al. (2006). African Monsoon Multidisciplinary Analysis. Bulletin of the American Meteorological Society, 87(12), 1739-1746.
+- **Content**: Comprehensive atmospheric, hydrological, and land surface data for West Africa, 2001-2010
+- **Usage**: West African monsoon research, climate modeling, land-atmosphere interaction
+- **How to Use**:
+  - Access via https://amma-international.org/
+  - AMMA database: https://baobab.sedoo.fr/AMMA/
+  - Registration required
+  - Multiple formats
+
+### Americas
+
+#### Environment and Climate Change Canada (ECCC) Data
+
+- **Source**: Environment and Climate Change Canada
+- **Citation**: Environment and Climate Change Canada, Historical Climate Data
+- **Content**: Hourly, daily, and monthly climate data from 8,700+ stations across Canada, 1840-present
+- **Usage**: Climate research, weather analysis, hydrology, agriculture
+- **How to Use**:
+  - Access via https://climate.weather.gc.ca/
+  - Bulk download available
+  - CSV format
+  - Python: `climate_data_canada` library
+
+#### INMET (Instituto Nacional de Meteorologia, Brazil)
+
+- **Source**: Brazilian National Institute of Meteorology
+- **Citation**: Instituto Nacional de Meteorologia, Brazil
+- **Content**: Automatic and conventional weather station data from 600+ stations across Brazil
+- **Usage**: Tropical meteorology, agriculture, hydrology, climate research
+- **How to Use**:
+  - Access via https://portal.inmet.gov.br/
+  - Real-time and historical data
+  - API available
+  - CSV format
+
+#### SMN (Servicio Meteorológico Nacional, Argentina)
+
+- **Source**: National Meteorological Service of Argentina
+- **Citation**: Servicio Meteorológico Nacional, Argentina
+- **Content**: Surface observations, upper-air data, climate normals for Argentina
+- **Usage**: Southern Hemisphere climate research, agriculture, weather forecasting
+- **How to Use**:
+  - Access via https://www.smn.gob.ar/
+  - Data catalog available
+  - Registration for some datasets
+
+#### CONAGUA (Mexico)
+
+- **Source**: Comisión Nacional del Agua, Mexico
+- **Citation**: National Water Commission, Mexico
+- **Content**: Meteorological and hydrological data from 5,000+ stations across Mexico
+- **Usage**: Water resources, climate research, drought monitoring, flood forecasting
+- **How to Use**:
+  - Access via http://www.conagua.gob.mx/
+  - SIAT portal for data access
+  - Multiple formats
+
+#### PRISM (Parameter-elevation Regressions on Independent Slopes Model, USA)
+
+- **Source**: Oregon State University
+- **Citation**: Daly, C., et al. (2008). Physiographically sensitive mapping of climatological temperature and precipitation across the conterminous United States. International Journal of Climatology, 28(15), 2031-2064.
+- **Content**: High-resolution (4 km) gridded climate data for the contiguous US, 1895-present
+- **Usage**: Climate analysis, ecological modeling, water resources, agriculture
+- **How to Use**:
+  - Access via https://prism.oregonstate.edu/
+  - Free for research and education
+  - BIL raster format
+  - Web services and bulk download
+
+#### NOAA HRRR (High-Resolution Rapid Refresh, USA)
+
+- **Source**: NOAA
+- **Citation**: Dowell, D.C., et al. (2022). The High-Resolution Rapid Refresh (HRRR). Weather and Forecasting, 37(8), 1371-1395.
+- **Content**: 3 km hourly updated weather model covering North America
+- **Usage**: High-resolution weather forecasting, severe weather nowcasting, aviation
+- **How to Use**:
+  - Access via NOAA: https://rapidrefresh.noaa.gov/hrrr/
+  - AWS Open Data: `s3://noaa-hrrr-bdp-pds/`
+  - GRIB2 format
+  - Python: `herbie-data` library
+
+### Australia and Oceania
+
+#### BOM (Bureau of Meteorology, Australia)
+
+- **Source**: Australian Bureau of Meteorology
+- **Citation**: Bureau of Meteorology, Climate Data Online
+- **Content**: Weather observations from 7,000+ stations across Australia, 1850-present; gridded datasets (AWAP)
+- **Usage**: Climate research, agriculture, water resources, drought monitoring
+- **How to Use**:
+  - Access via http://www.bom.gov.au/climate/data/
+  - Web interface for station data
+  - AWAP gridded data: 5 km resolution
+  - NetCDF and CSV formats
+
+#### NIWA (National Institute of Water and Atmospheric Research, New Zealand)
+
+- **Source**: NIWA, New Zealand
+- **Citation**: National Institute of Water and Atmospheric Research
+- **Content**: Weather station data, climate summaries, virtual climate station network for New Zealand
+- **Usage**: Climate research, agriculture, water resources, renewable energy
+- **How to Use**:
+  - Access via https://www.niwa.co.nz/
+  - CliFlo database: https://cliflo.niwa.co.nz/
+  - Registration required (free for research)
+  - Multiple formats
+
+#### SILO (Scientific Information for Land Owners, Australia)
+
+- **Source**: Queensland Government
+- **Citation**: Jeffrey, S.J., et al. (2001). Using spatial interpolation to construct a comprehensive archive of Australian climate data. Environmental Modelling & Software, 16(4), 309-330.
+- **Content**: Gridded daily climate data (0.05° resolution) for Australia from 1889-present
+- **Usage**: Agriculture, hydrological modeling, climate research, land management
+- **How to Use**:
+  - Access via https://www.longpaddock.qld.gov.au/silo/
+  - Point data and gridded data
+  - API available
+  - NetCDF, CSV formats
+
+#### PCCSP (Pacific Climate Change Science Program)
+
+- **Source**: Australian Bureau of Meteorology and CSIRO
+- **Citation**: PCCSP Climate Data Portal
+- **Content**: Climate data and projections for 15 Pacific Island countries
+- **Usage**: Climate change adaptation, island climate research, vulnerability assessment
+- **How to Use**:
+  - Access via https://www.pacificclimatechange.net/
+  - Country-specific datasets
+  - Multiple formats
 
 ---
 
